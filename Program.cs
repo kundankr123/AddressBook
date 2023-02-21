@@ -16,25 +16,37 @@
 
             //UseCase2
 
+            //AddressBook myAddressBook = new AddressBook();
+
+            //Console.WriteLine("Add new contact:");
+            //Console.Write("Enter first name: ");
+            //string firstName = Console.ReadLine();
+            //Console.Write("Enter last name: ");
+            //string lastName = Console.ReadLine();
+            //Console.Write("Enter country: ");
+            //string country = Console.ReadLine();
+            //Console.Write("Enter phone number: ");
+            //string phoneNumber = Console.ReadLine();
+            //Console.Write("Enter email: ");
+            //string email = Console.ReadLine();
+
+            //Contacts newContact = new Contacts(firstName, lastName, country, phoneNumber, email);
+
+            //myAddressBook.AddContact(newContact);
+            //Console.WriteLine("Contact Details: ");
+            //myAddressBook.PrintContacts();
+
+            //UseCase3
+
             AddressBook myAddressBook = new AddressBook();
-
-            Console.WriteLine("Add new contact:");
-            Console.Write("Enter first name: ");
-            string firstName = Console.ReadLine();
-            Console.Write("Enter last name: ");
-            string lastName = Console.ReadLine();
-            Console.Write("Enter country: ");
-            string country = Console.ReadLine();
-            Console.Write("Enter phone number: ");
-            string phoneNumber = Console.ReadLine();
-            Console.Write("Enter email: ");
-            string email = Console.ReadLine();
-
-            Contacts newContact = new Contacts(firstName, lastName, country, phoneNumber, email);
-
+            Contacts newContact = new Contacts("kundan", "kumar", "INDIA", "7975461361", "kundan.kr@example.com");
             myAddressBook.AddContact(newContact);
-            Console.WriteLine("Contact Details: ");
             myAddressBook.PrintContacts();
+
+            myAddressBook.EditContacts("kundan", "kumar", "Rajan", "Kumar", "INDIA", "7975461361", "rajan.kr123@example.com");
+            myAddressBook.PrintContacts();
+
+
         }
     }
 }
