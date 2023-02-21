@@ -61,7 +61,6 @@ namespace AddressBook
                     }
                     ContactInfo[NumberOfContacts - 1] = null;
                     NumberOfContacts--;
-                    return;
                 }
             }
         }

@@ -51,9 +51,9 @@
             AddressBook myAddressBook = new AddressBook();
             Contacts newContact = new Contacts("Kundan", "kumar", "INDIA", "7975461361", "kundan.kr123@example.com");
             Contacts newContact1 = new Contacts("Rajan", "Kumar", "India", "9693253810", "rajankumar.123@example.com");
+            
             myAddressBook.AddContact(newContact);
             myAddressBook.AddContact(newContact1);
-
             myAddressBook.PrintContacts();
 
             myAddressBook.DeleteContact("Kundan", "kumar");
