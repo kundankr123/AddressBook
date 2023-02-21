@@ -1,4 +1,4 @@
-﻿namespace Day9AddressBook
+﻿namespace AddressBook
 {
     public class Program
     {
