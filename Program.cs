@@ -38,13 +38,27 @@
 
             //UseCase3
 
+            //AddressBook myAddressBook = new AddressBook();
+            //Contacts newContact = new Contacts("kundan", "kumar", "INDIA", "7975461361", "kundan.kr@example.com");
+            //myAddressBook.AddContact(newContact);
+            //myAddressBook.PrintContacts();
+
+            //myAddressBook.EditContacts("kundan", "kumar", "Rajan", "Kumar", "INDIA", "7975461361", "rajan.kr123@example.com");
+            //myAddressBook.PrintContacts();
+
+            //UseCase4
+
             AddressBook myAddressBook = new AddressBook();
-            Contacts newContact = new Contacts("kundan", "kumar", "INDIA", "7975461361", "kundan.kr@example.com");
+            Contacts newContact = new Contacts("Kundan", "kumar", "INDIA", "7975461361", "kundan.kr123@example.com");
+            Contacts newContact1 = new Contacts("Rajan", "Kumar", "India", "9693253810", "rajankumar.123@example.com");
             myAddressBook.AddContact(newContact);
+            myAddressBook.AddContact(newContact1);
+
             myAddressBook.PrintContacts();
 
-            myAddressBook.EditContacts("kundan", "kumar", "Rajan", "Kumar", "INDIA", "7975461361", "rajan.kr123@example.com");
+            myAddressBook.DeleteContact("Kundan", "kumar");
             myAddressBook.PrintContacts();
+
 
 
         }
